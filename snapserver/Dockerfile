@@ -13,7 +13,7 @@ RUN \
     && rm -fr \
         /tmp/*
 
-RUN apk add --no-cache --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community/ snapcast-server=0.28.0-r2
+RUN apk add --no-cache --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community/ snapcast-server=0.29.0-r0
 
 RUN apk add --no-cache --repository=http://dl-cdn.alpinelinux.org/alpine/edge/testing/ librespot=0.4.2-r4
 
