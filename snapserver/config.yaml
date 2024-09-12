@@ -24,6 +24,7 @@ options:
     cache_size_limit: "2G"
     bitrate: 320
     volume: 100
+    disable_discovery: true
   stream:
     streams: "tcp://0.0.0.0:4953?name=TTS&codec=pcm&mode=server"
     buffer: 1000
