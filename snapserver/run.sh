@@ -43,9 +43,12 @@ echo -n "&bitrate=$(bashio::config 'spotify.bitrate')" >> "${config}"
 echo -n "&volume=$(bashio::config 'spotify.volume')" >> "${config}"
 echo -n "&cache=$(bashio::config 'spotify.cache_dir')" >> "${config}"
 echo -n "&autoplay=true" >> "${config}"
-echo -n "&normalize=$(bashio::config 'spotify.normalize')" >> "${config}"
 #echo -n "&wd_timeout=3600" >> "${config}" # This might lead to uneccesary restarts if there are no log lines by librespot
 echo -n "&params=--disable-discovery%20--cache-size-limit%3D$(bashio::config 'spotify.cache_size_limit')" >> "${config}"
+if bashio::config 'spotify.normalize' == true; then
+    echo -n "&normalize=true" >> "${config}"
+fi
+
 echo "" >> "${config}"
 
 # Other streams
