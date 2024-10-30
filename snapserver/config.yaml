@@ -19,6 +19,7 @@ options:
     datadir: "/data/snapserver"
   spotify:
     credentials: ""
+    normalize: true
     device_name: "HA_Snapcast"
     cache_dir: "/data/librespot"
     cache_size_limit: "2G"
