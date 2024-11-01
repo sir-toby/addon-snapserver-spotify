@@ -14,6 +14,9 @@ map: ["share:rw"]
 audio: true
 init: false
 options:
+  client: 
+    host: "127.0.0.1"
+    port: 1704
   server:
     threads: "-1"
     datadir: "/data/snapserver"
@@ -43,6 +46,9 @@ schema:
   server:
     datadir: str
     threads: int?
+  schema:
+    host: str
+    port: int
   spotify:
     credentials: str
     device_name: str
@@ -51,6 +57,7 @@ schema:
     bitrate: list(96|160|320)
     volume: int(0,100)
     bypass_apresolve: bool
+    normalize: bool
   stream:
     streams: str?
     bis: str?
