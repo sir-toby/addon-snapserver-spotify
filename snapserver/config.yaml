@@ -46,7 +46,7 @@ schema:
   server:
     datadir: str
     threads: int?
-  schema:
+  client:
     host: str
     port: int
   spotify:
