@@ -112,5 +112,9 @@ if bashio::config.has_value 'logging.enabled'; then
     echo "debug = $(bashio::config 'logging.enabled')" >> "${config}"
 fi
 
+
 bashio::log.info "Starting SnapServer..."
 exec snapserver
+
+bashio::log.info "Starting SnapClient..."
+exec snapclient -h $(bashio::config 'host') -p $(bashio::config 'port')
