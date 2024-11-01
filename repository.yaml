@@ -1,3 +1,4 @@
 name: Snapcast Server + librespot addon for HA
-url: https://github.com/rwjack/addon-snapserver-spotify/
-maintainer: Jack <jack@foss.family>
+url: https://github.com/sir-toby/addon-snsnapcast
+maintainer: sir_toby42 <sir-toby@users.noreply.github.com>
+
