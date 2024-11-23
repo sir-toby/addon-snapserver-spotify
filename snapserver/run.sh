@@ -48,7 +48,7 @@ bashio::log.info "Starting SnapServer..."
 snapserver &  # Run snapserver in the background
 
 bashio::log.info "Starting SnapClient..."
-snapclient -h $(bashio::config 'host') -p $(bashio::config 'port') &  # Run snapclient in the background
+snapclient &  # Run snapclient in the background
 
 # Wait for all background processes to finish
 wait
