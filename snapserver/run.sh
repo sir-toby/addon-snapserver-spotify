@@ -1,5 +1,5 @@
 
-!/usr/bin/env bashio
+#!/usr/bin/env bashio
 
 #mkdir -p /share/snapfifo
 
