@@ -1,6 +1,6 @@
 ---
 name: Snapcast Server & Client + Librespot
-version: 2024.10.2
+version: 2024.11.1
 slug: snapcast-libspot
 description: Host a Snapcast server and integrated client with Librespot
 url: https://github.com/rwjack/addon-snapserver-spotify
