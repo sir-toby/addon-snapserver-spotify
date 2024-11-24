@@ -113,7 +113,7 @@ bashio::log.info "Starting SnapServer..."
 snapserver &  # Run snapserver in the background
 
 bashio::log.info "Starting SnapClient..."
-systemctl enable avahi-daemon
+#systemctl enable avahi-daemon
 snapclient -h "$(bashio::config 'client.host')" -p "$(bashio::config 'client.port')" &  # Run snapclient in the background
 
 # Wait for all background processes to finish
